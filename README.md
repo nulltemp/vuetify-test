@@ -1,4 +1,7 @@
 # vuetify-test
+[![Build Status](https://travis-ci.org/nulltemp/vuetify-test.svg?branch=master)](https://travis-ci.org/nulltemp/vuetify-test)
+
+https://nulltemp.github.io/vuetify-test/
 
 ## Project setup
 ```

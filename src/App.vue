@@ -1,10 +1,14 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="item in items">
-        <router-link :to="item.val">{{item.val}}</router-link>
-      </li>
-    </ul>
+    <v-toolbar class="toolbar">
+      <v-toolbar-title>Vuetify</v-toolbar-title>
+      <v-spacer/>
+      <v-toolbar-items>
+        <v-btn v-for="(item, index) in items" :key="index" :to="item.val" flat>
+          {{item.val}}
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
     <router-view/>
   </div>
 </template>
@@ -15,14 +19,14 @@ export default {
   data () {
     return {
       items: [
-        {val: '/align'},
-        {val: '/alignContent'},
-        {val: '/dType'},
-        {val: '/fluid'},
-        {val: '/gridList'},
-        {val: '/justify'},
-        {val: '/rowcolumn'},
-        {val: '/wrap'},
+        {val: 'align'},
+        {val: 'alignContent'},
+        {val: 'dType'},
+        {val: 'fluid'},
+        {val: 'gridList'},
+        {val: 'justify'},
+        {val: 'rowcolumn'},
+        {val: 'wrap'},
       ]
     }
   }
@@ -36,6 +40,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.toolbar {
+  margin-bottom: 2em;
 }
 </style>

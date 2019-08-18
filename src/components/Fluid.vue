@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container style="background-color:red">
+    <v-container class="background">
       <v-layout>
         <v-flex>
           <v-card color="white">
@@ -10,7 +10,7 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid style="background-color:blue">
+    <v-container fluid class="fluid-background">
       <v-layout>
         <v-flex>
           <v-card color="white">
@@ -21,3 +21,13 @@
     </v-container>
   </div>
 </template>
+
+<style scoped>
+.background {
+  background-color:red;
+}
+
+.fluid-background {
+  background-color:blue;
+}
+</style>

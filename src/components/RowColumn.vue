@@ -14,7 +14,7 @@
         </v-flex>
 
         <v-flex>
-          <v-card color="blue" style="font-size:3em">
+          <v-card color="blue" class="blue">
             blue
           </v-card>
         </v-flex>
@@ -37,3 +37,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.blue {
+  font-size: 3em;
+}
+</style>

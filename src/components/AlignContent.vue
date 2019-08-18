@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container v-for="item in items" :key="item.val">
-      <v-layout :class="item.val" style="height:5em;background-color:grey" wrap>
+      <v-layout :class="item.val" class="background" wrap>
         <v-flex xs2>
           <v-card color="white">
             {{item.val}}
@@ -42,3 +42,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.background {
+  height: 5em;
+  background-color:grey;
+}
+</style>

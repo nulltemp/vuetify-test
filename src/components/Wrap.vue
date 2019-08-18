@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-layout style="background-color:grey">
+      <v-layout class="background">
         <v-flex xs2>
           <v-card color="white">
             none
@@ -26,7 +26,7 @@
     </v-container>
 
     <v-container>
-      <v-layout style="background-color:grey" wrap>
+      <v-layout class="background" wrap>
         <v-flex xs2>
           <v-card color="white">
             wrap
@@ -51,3 +51,9 @@
     </v-container>
   </div>
 </template>
+
+<style scoped>
+.background {
+  background-color:grey;
+}
+</style>

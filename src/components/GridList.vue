@@ -2,19 +2,19 @@
   <div>
     <v-container v-for="item in items" :key="item.val" :class="item.val">
       <v-layout>
-        <v-flex xs2>
+        <v-flex>
           <v-card>
             {{item.val}}
           </v-card>
         </v-flex>
-        <v-flex xs2>
+        <v-flex>
           <v-card color="red">
             red
           </v-card>
         </v-flex>
 
-        <v-flex xs2>
-          <v-card color="blue" style="font-size:3em">
+        <v-flex>
+          <v-card color="blue" class="blue">
             blue
           </v-card>
         </v-flex>
@@ -38,3 +38,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.blue {
+  font-size: 3em;
+}
+</style>

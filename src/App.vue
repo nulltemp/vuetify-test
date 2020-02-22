@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <v-app id="app">
     <v-toolbar class="toolbar">
       <v-toolbar-title>Vuetify</v-toolbar-title>
       <v-spacer/>
@@ -9,13 +9,26 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <router-view/>
-  </div>
+
+    <v-content>
+      <router-view/>
+    </v-content>
+
+    <v-footer dark>
+      <v-spacer />
+      <privacy-policy />
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
+import PrivacyPolicy from "./components/modal/PrivacyPolicy";
+
 export default {
   name: 'App',
+  components: {
+    PrivacyPolicy
+  },
   data () {
     return {
       items: [

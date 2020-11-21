@@ -1,5 +1,6 @@
 # vuetify-test
-[![Build Status](https://travis-ci.org/nulltemp/vuetify-test.svg?branch=master)](https://travis-ci.org/nulltemp/vuetify-test)
+
+![github pages](https://github.com/nulltemp/vuetify-test/workflows/github%20pages/badge.svg)
 
 https://nulltemp.github.io/vuetify-test/
 

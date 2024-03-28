@@ -284,7 +284,7 @@ var i=Object.freeze({}),s=Array.isArray;function r(t){return void 0===t||null===
 /*!************************************************!*\
   !*** ./src/components/VDatePicker/util/pad.ts ***!
   \************************************************/
-/*! exports provided: default */function(t,e,n){"use strict";n.r(e);var i=function(t,e,n){return e>>=0,t=String(t),n=String(n),t.length>e?String(t):(e-=t.length,e>n.length&&(n+=n.repeat(e/n.length)),n.slice(0,e)+String(t))};e["default"]=function(t,e){return void 0===e&&(e=2),i(t,e,"0")}},"./src/components/VDialog/VDialog.js":
+/*! exports provided: default */function(t,e,n){"use strict";n.r(e);var i=function(t,e,n){return e|=0,t=String(t),n=String(n),t.length>e?String(t):(e-=t.length,e>n.length&&(n+=n.repeat(e/n.length)),n.slice(0,e)+String(t))};e["default"]=function(t,e){return void 0===e&&(e=2),i(t,e,"0")}},"./src/components/VDialog/VDialog.js":
 /*!*******************************************!*\
   !*** ./src/components/VDialog/VDialog.js ***!
   \*******************************************/
@@ -1328,7 +1328,7 @@ var i=Object.freeze({}),s=Array.isArray;function r(t){return void 0===t||null===
 /*!*****************************************!*\
   !*** ./src/util/color/transformSRGB.ts ***!
   \*****************************************/
-/*! exports provided: fromXYZ, toXYZ */function(t,e,n){"use strict";n.r(e),n.d(e,"fromXYZ",(function(){return c})),n.d(e,"toXYZ",(function(){return l}));var i=[[3.2406,-1.5372,-.4986],[-.9689,1.8758,.0415],[.0557,-.204,1.057]],s=function(t){return t<=.0031308?12.92*t:1.055*Math.pow(t,1/2.4)-.055},r=[[.4124,.3576,.1805],[.2126,.7152,.0722],[.0193,.1192,.9505]],o=function(t){return t<=.04045?t/12.92:Math.pow((t+.055)/1.055,2.4)};function a(t){return Math.max(0,Math.min(1,t))}function c(t){for(var e=Array(3),n=s,r=i,o=0;o<3;++o)e[o]=Math.round(255*a(n(r[o][0]*t[0]+r[o][1]*t[1]+r[o][2]*t[2])));return(e[0]<<16)+(e[1]<<8)+(e[2]<<0)}function l(t){for(var e=[0,0,0],n=o,i=r,s=n((t>>16&255)/255),a=n((t>>8&255)/255),c=n((t>>0&255)/255),l=0;l<3;++l)e[l]=i[l][0]*s+i[l][1]*a+i[l][2]*c;return e}},"./src/util/colorUtils.ts":
+/*! exports provided: fromXYZ, toXYZ */function(t,e,n){"use strict";n.r(e),n.d(e,"fromXYZ",(function(){return c})),n.d(e,"toXYZ",(function(){return l}));var i=[[3.2406,-1.5372,-.4986],[-.9689,1.8758,.0415],[.0557,-.204,1.057]],s=function(t){return t<=.0031308?12.92*t:1.055*Math.pow(t,1/2.4)-.055},r=[[.4124,.3576,.1805],[.2126,.7152,.0722],[.0193,.1192,.9505]],o=function(t){return t<=.04045?t/12.92:Math.pow((t+.055)/1.055,2.4)};function a(t){return Math.max(0,Math.min(1,t))}function c(t){for(var e=Array(3),n=s,r=i,o=0;o<3;++o)e[o]=Math.round(255*a(n(r[o][0]*t[0]+r[o][1]*t[1]+r[o][2]*t[2])));return(e[0]<<16)+(e[1]<<8)+(e[2]|0)}function l(t){for(var e=[0,0,0],n=o,i=r,s=n((t>>16&255)/255),a=n((t>>8&255)/255),c=n((255&t)/255),l=0;l<3;++l)e[l]=i[l][0]*s+i[l][1]*a+i[l][2]*c;return e}},"./src/util/colorUtils.ts":
 /*!********************************!*\
   !*** ./src/util/colorUtils.ts ***!
   \********************************/
@@ -1365,4 +1365,4 @@ var i=Object.freeze({}),s=Array.isArray;function r(t){return void 0===t||null===
   !*** external {"commonjs":"vue","commonjs2":"vue","amd":"vue","root":"Vue"} ***!
   \******************************************************************************/
 /*! no static exports found */function(e,n){e.exports=t}})["default"]}))}}]);
-//# sourceMappingURL=chunk-vendors.8db3361a.js.map
+//# sourceMappingURL=chunk-vendors.74366cc9.js.map
